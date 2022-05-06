@@ -56,7 +56,7 @@ function Widget(){
         snapPoints={[1, 280]}      
       >
         {
-          feedbackSent ? <Success /> :
+          feedbackSent ? <Success onSendAnotherFeedback={handleRestartFeedback} /> :
             <>
               { feedbackType ? 
                   <Form 
