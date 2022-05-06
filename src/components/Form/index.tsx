@@ -8,7 +8,9 @@ import {
 } from 'react-native';
 
 import { ArrowLeft } from 'phosphor-react-native';
+import { Button } from '../Button';
 import { FeedbackType } from '../../components/Widget';
+import { ScreenshotButton } from '../ScreenshotButton';
 
 import { styles } from './styles';
 import { theme } from '../../theme';
@@ -52,6 +54,17 @@ export function Form({ feedbackType }: Props) {
         placeholderTextColor={theme.colors.text_secondary}
       />
 
+      <View style={styles.footer}>
+        <ScreenshotButton 
+          onTakeShot={() => {}}
+          onRemoveShot={() => {}}
+          screenshot="https://github.com/gbdsantos.png"
+        />
+
+        <Button 
+          isLoading={false}
+        />
+      </View>
     </View>
   );
 }
