@@ -41,5 +41,10 @@ export const styles = StyleSheet.create({
     height: 112,
     marginBottom: 8,
     padding: 12,
-  }
+  },
+
+  footer: {
+    flexDirection: 'row',
+    marginBottom: 16,
+  },
 });

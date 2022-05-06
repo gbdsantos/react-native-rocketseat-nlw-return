@@ -9,6 +9,7 @@ import { ChatTeardropDots } from 'phosphor-react-native';
 
 import { Form } from '../Form';
 import { Options } from '../Options';
+import { Success } from '../Success';
 
 import { styles } from './styles';
 import { theme } from '../../theme';
@@ -42,8 +43,8 @@ function Widget(){
         ref={bottomSheetRef} 
         snapPoints={[1, 280]}      
       >
-        <Form 
-          feedbackType="BUG"
+        <Form
+          feedbackType='BUG'
         />
       </BottomSheet>
     </>
